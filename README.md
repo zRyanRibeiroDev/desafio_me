@@ -27,6 +27,6 @@ Olá, abaixo veremos todo o processo para instalação e inicialização do proj
   <br>
   A outra maneira é rodando o seguinte comando no terminal do VS Code
   #### npm install chromedriver
-  - Feito isso podemos começar a codar.
+  Feito isso podemos começar a codar.
   
   
