@@ -1,10 +1,17 @@
 # Resolução do Desafio Me
+## Instalação
 Olá, abaixo veremos todo o processo para instalação e inicialização do projeto
      
 - Como editor de código optaremos pelo VS Code, para realizar a instalação <br>
   vamos acessar este link: https://code.visualstudio.com/ . <br>
   Após a instalação podemos criar a pasta do projeto onde vamos instalar as dependências<br>
-  necessárias para que o mesmo funcione, abra a pasta com o VSCode e depois o terminal.
+  necessárias para que o mesmo funcione, abra a pasta com o VSCode e depois o terminal<br>
+  onde já podemos rodar esse comando: git init, se o comando não funcionar<br>
+  provavelmente falta realizar o download do git: https://git-scm.com/
+  
+- Mais a frente vamos precisar rodar o comando git clone para que o projeto seja clonado<br>
+  no editor de código e assim poderemos rodar o código. Tambem precisamos realizar <br>
+  a instalação do Node.js nosso ambiente de execução: https://nodejs.org/en/
 
 - Utilizaremos o Selenium Framework para que possamos rodar os testes.<br>
   Neste link será possível acessar toda a documentação dele e realizar o download <br>
@@ -27,6 +34,20 @@ Olá, abaixo veremos todo o processo para instalação e inicialização do proj
   <br>
   A outra maneira é rodando o seguinte comando no terminal do VS Code
   #### npm install chromedriver
-  Feito isso podemos começar a codar.
+  Feito isso podemos clonar o projeto com o seguinte comando:
+  git clone -b master https://github.com/zRyanRibeiroDev/desafio_me/
   
+# Um pouco sobre as tecnologias utilizadas no projeto
+## Git
+- Sistema de versionamento de código, com ele é possível gerar diferentes versões<br>
+  do projeto, caso seja em grupo podemos receber mudanças dos outros desenvolvedore<br>
+  como também nós vamos enviarmos as nossas. Essencial para qualquer projeto.
+## Node.js
+- Plataforma que nos trás a capacidade de rodar códigos JavaScript 
+  fora dos navegadores através da engine V8, mesma utlizada pelos mesmos.
+## Selenium 
+- Framework usado para testar aplicações web pelo browser de forma automatizada.
   
+## Selenium WebDriver
+- O WebDriver usa o próprio driver do navegador para a automação, <br>
+  permitindo a interação entre o script de teste e o respectivo browser.
