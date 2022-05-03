@@ -59,7 +59,7 @@ const chrome = require('selenium-webdriver/chrome');
 
     //encontra o input do email e insere o email de cadastro 
     const emailRegistrar = await driver.findElement(By.xpath('//*[@id="email_create"]'));
-    emailRegistrar.sendKeys('ryan2_me@outlook.com')
+    emailRegistrar.sendKeys('teste_desafio_me@outlook.com')
     //encontra o botao para criar a conta e clica nele
     const botao = await driver.findElement(By.xpath('//*[@id="SubmitCreate"]'))
     botao.click()
@@ -141,7 +141,7 @@ const chrome = require('selenium-webdriver/chrome');
     //de login inválido acontecesse, tentei fazer em função separada mas não soube como chamar
 
     const email = await driver.findElement(By.xpath('//*[@id="email"]'))
-    await email.sendKeys('ryan3_me@outlook.com')
+    await email.sendKeys('teste1_desafio_me@outlook.com')
   
     const senhaLogin = await driver.findElement(By.xpath('//*[@id="passwd"]'))
     await senhaLogin.sendKeys('Dme_482918')
@@ -170,6 +170,8 @@ const chrome = require('selenium-webdriver/chrome');
     //pega a mensagem da tela de que o login ficou vazio
     const loginVazio = await driver.findElement(By.xpath('//*[@id="center_column"]/div[1]/ol/li')).getText()
     console.log('Login Vazio: ', loginVazio)
+
+    await driver.quit()
     
   } catch (error) {
     console.log(error)
