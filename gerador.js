@@ -1,8 +1,14 @@
 const { faker } = require('@faker-js/faker');
 
-
 faker.locale = 'en_US';
 const usuarios = [];
+
+// Mesmo caso para essa classe do gerador
+// Não consegui chamar essa classe no outro código
+// Porém vou deixar ela nos arquivos para que fique 
+// constatado que iniciei
+
+//Utilizei a biblioteca faker.js para gerar os dados
 
     for (i = 0; i < 3; i++){
 
@@ -32,12 +38,12 @@ const usuarios = [];
             pais,
     
         }
-    
-        usuarios.push(usuario);
+        
+        
+      //  usuarios.push(usuario);
         
     }
 
-    console.log(usuarios)
-
+    
 
 
